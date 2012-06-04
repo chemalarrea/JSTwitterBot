@@ -71,7 +71,7 @@ api = twitter.Api(consumer_key=consumer_key,consumer_secret=consumer_secret, acc
 
 print "Logged user: @" + api.VerifyCredentials().screen_name
 
-query = ['hey'] # words to search
+query = ['search'] # words to search
 stream = tweetstream.FilterStream(twitter_account_username, twitter_account_password, track=query)
 
 analized_tweets = 0
